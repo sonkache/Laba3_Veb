@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Аутентификация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-container">
+
+<form class="auth-form" action="https://httpbin.org/post" method="POST">
+    <h2>Аутентификация</h2>
+
+    <label for="login">Логин:</label>
+    <input type="text" id="login" name="login" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label>
+        <input type="checkbox" name="remember"> Запомнить меня
+    </label>
+
+    <button type="submit">Войти</button>
+</form>
+
+</body>
+</html>
