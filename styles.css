@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(173, 216, 230, 0.8);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+header h1 { margin: 0; font-size: 1.6rem; font-weight: 600; color: #000; }
+nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 18px; }
+nav a {
+    text-decoration: none; color: #000; font-weight: bold; font-size: 1rem;
+    transition: background 0.2s, color 0.2s; padding: 6px 10px; border-radius: 8px;
+}
+nav a:hover { background: #e8f3ff; }
+nav a.selected_menu { background: #ffd54f; color: #000; }
+
+main { flex: 1; padding: 28px 20px 40px; max-width: 960px; width: 100%; margin: 0 auto; text-align: left; }
+section { padding: 10px 0 24px; }
+section h2 { font-size: 1.4rem; margin-bottom: 16px; color: #000; }
+section p { font-size: 1.05rem; text-align: justify; }
+
+/* фото */
+img.responsive {
+  max-width: 300px; 
+  height: auto;     
+}
+
+
+/* таблица контакт. */
+table {
+    width: 100%; border-collapse: collapse; background: #fff; font-size: 1rem;
+    border-radius: 12px; overflow: hidden;
+}
+table th, table td { padding: 12px; border: 2px solid #007bff; text-align: center; }
+table th { background: #007bff; color: #fff; }
+
+/* формы */
+form {
+    max-width: 640px; margin: 24px 0; padding: 20px; background: #fff;
+    border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+form h2 { text-align: center; margin: 0 0 16px; color: #000; }
+label { display: block; margin-top: 12px; font-weight: 600; color: #333; }
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    width: 100%; padding: 12px; margin-top: 6px; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem;
+}
+textarea { resize: vertical; min-height: 120px; }
+input[type="file"] { margin-top: 10px; }
+input[type="checkbox"], input[type="radio"] { margin-right: 6px; }
+button { margin-top: 16px; padding: 10px 16px; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; background: #007bff; color: #fff; }
+button:hover { background: #0056b3; }
+
+/* экран авторизации */
+.auth-container {
+    min-height: calc(100vh - 80px - 60px);
+    display: flex; justify-content: center; align-items: center;
+    background: url("https://i.pinimg.com/736x/2d/67/16/2d6716724d1595ff9c84a209ee715476.jpg") no-repeat center/cover;
+}
+.auth-form {
+    width: 320px; background: rgba(255,255,255,0.9); padding: 28px;
+    border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.25); text-align: left;
+}
+
+/* футер определенной высоты */
+footer {
+    height: 60px; background: #333; color: #fff; display: flex; align-items: center; justify-content: center; padding: 0 12px;
+}
